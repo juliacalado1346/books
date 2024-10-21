@@ -1,0 +1,196 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #283593;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Seções */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.intro-section {
+    background-color: #f3f3f3;
+    padding: 100px 20px;
+    color: #283593;
+}
+
+.intro-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 18px;
+}
+
+.categories-section {
+    background-color: #fafafa;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #283593;
+}
+
+.book-category {
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.book-category:hover {
+    transform: scale(1.05);
+}
+
+.book-category img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+.book-category h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.book-details {
+    text-align: center;
+}
+
+.book-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.book-price {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.about-section, .contact-section {
+    background-color: #f3f3f3;
+}
+
+.about-section p, .contact-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-section a {
+    color: #283593;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #283593;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .book-category {
+        display: inline-block;
+        width: 30%;
+        margin: 1%;
+        vertical-align: top;
+    }
+
+    .book-category img {
+        max-width: 150px;
+    }
+
+    .intro-section {
+        padding: 120px 40px;
+    }
+}
